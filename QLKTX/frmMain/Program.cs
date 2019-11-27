@@ -20,7 +20,7 @@ namespace frmMain
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new frmMain());
+            Application.Run(new frmDangnhap());
         }
     }
 }
