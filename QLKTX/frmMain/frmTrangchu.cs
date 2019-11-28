@@ -18,7 +18,7 @@ namespace frmMain
         public void skin()
         {
             DevExpress.LookAndFeel.DefaultLookAndFeel themes = new DevExpress.LookAndFeel.DefaultLookAndFeel();
-            themes.LookAndFeel.SkinName = "Coffee";
+            themes.LookAndFeel.SkinName = "Money Twins";
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -42,6 +42,18 @@ namespace frmMain
         {
             frmHoadon fhoadon = new frmHoadon();
             fhoadon.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhu frmkhu = new frmKhu();
+            frmkhu.Show();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDienNuoc frmdiennuoc = new frmDienNuoc();
+            frmdiennuoc.Show();
         }
   
     }

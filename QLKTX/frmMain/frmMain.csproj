@@ -52,11 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Class\Connect\Connection.cs" />
+    <Compile Include="frmTrangchu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmTrangchu.Designer.cs">
+      <DependentUpon>frmTrangchu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDangnhap.cs">
       <SubType>Form</SubType>
@@ -64,39 +65,66 @@
     <Compile Include="frmDangnhap.Designer.cs">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHoadon.cs">
+    <Compile Include="Class\Chien\frmDienNuoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHoadon.Designer.cs">
+    <Compile Include="Class\Chien\frmDienNuoc.designer.cs">
+      <DependentUpon>frmDienNuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Nam\frmHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Nam\frmHoadon.Designer.cs">
       <DependentUpon>frmHoadon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHopdong.cs">
+    <Compile Include="Class\Nam\frmHopdong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHopdong.Designer.cs">
+    <Compile Include="Class\Nam\frmHopdong.Designer.cs">
       <DependentUpon>frmHopdong.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTaisan.cs">
+    <Compile Include="Class\Chien\frmKhu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTaisan.Designer.cs">
+    <Compile Include="Class\Chien\frmKhu.designer.cs">
+      <DependentUpon>frmKhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Chien\frmPPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Chien\frmPPhong.designer.cs">
+      <DependentUpon>frmPPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Nam\frmTaisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Nam\frmTaisan.Designer.cs">
       <DependentUpon>frmTaisan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmTrangchu.resx">
+      <DependentUpon>frmTrangchu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHoadon.resx">
+    <EmbeddedResource Include="Class\Chien\frmDienNuoc.resx">
+      <DependentUpon>frmDienNuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Nam\frmHoadon.resx">
       <DependentUpon>frmHoadon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHopdong.resx">
+    <EmbeddedResource Include="Class\Nam\frmHopdong.resx">
       <DependentUpon>frmHopdong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTaisan.resx">
+    <EmbeddedResource Include="Class\Chien\frmKhu.resx">
+      <DependentUpon>frmKhu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Chien\frmPPhong.resx">
+      <DependentUpon>frmPPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Nam\frmTaisan.resx">
       <DependentUpon>frmTaisan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -118,6 +146,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class\Minh\" />
+    <Folder Include="Form\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
