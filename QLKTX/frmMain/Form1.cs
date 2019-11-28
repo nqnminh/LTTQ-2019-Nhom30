@@ -25,6 +25,24 @@ namespace frmMain
         {
             skin();
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTaisan ftaisan = new frmTaisan();
+            ftaisan.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHopdong fhopdong = new frmHopdong();
+            fhopdong.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHoadon fhoadon = new frmHoadon();
+            fhoadon.Show();
+        }
   
     }
 }

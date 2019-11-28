@@ -10,3 +10,14 @@ C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmMain.
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmDangnhap.resources
 C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.exe
 C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.pdb
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\bin\Debug\frmMain.exe
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\bin\Debug\frmMain.pdb
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.csprojResolveAssemblyReference.cache
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmMain.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmDangnhap.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmHoadon.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmHopdong.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmTaisan.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.Properties.Resources.resources
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.csproj.GenerateResource.Cache
+C:\Users\ASUS ROG\Desktop\Git\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.exe.licenses

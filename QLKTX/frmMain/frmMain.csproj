@@ -64,6 +64,24 @@
     <Compile Include="frmDangnhap.Designer.cs">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoadon.Designer.cs">
+      <DependentUpon>frmHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHopdong.Designer.cs">
+      <DependentUpon>frmHopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaisan.Designer.cs">
+      <DependentUpon>frmTaisan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -71,6 +89,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoadon.resx">
+      <DependentUpon>frmHoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHopdong.resx">
+      <DependentUpon>frmHopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaisan.resx">
+      <DependentUpon>frmTaisan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
