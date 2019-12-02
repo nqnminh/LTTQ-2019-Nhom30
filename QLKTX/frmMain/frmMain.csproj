@@ -35,11 +35,17 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.2" />
     <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.2.Core" />
     <Reference Include="DevExpress.Utils.v15.2" />
     <Reference Include="DevExpress.XtraBars.v15.2" />
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,7 +58,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Connect\Connection.cs" />
+    <Compile Include="Class\Connection.cs" />
+    <Compile Include="Class\Connect_Taikhoan.cs" />
+    <Compile Include="Class\Minh\Connect_Sinhvien.cs" />
+    <Compile Include="Class\Minh\frmDoimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Minh\frmDoimatkhau.Designer.cs">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Minh\frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Minh\frmNhanvien.Designer.cs">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Minh\frmSinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Minh\frmSinhvien.Designer.cs">
+      <DependentUpon>frmSinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Nam\DataProvider.cs" />
     <Compile Include="frmTrangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +130,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Class\Minh\frmDoimatkhau.resx">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Minh\frmNhanvien.resx">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Minh\frmSinhvien.resx">
+      <DependentUpon>frmSinhvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTrangchu.resx">
       <DependentUpon>frmTrangchu.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,7 +184,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\Minh\" />
     <Folder Include="Form\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

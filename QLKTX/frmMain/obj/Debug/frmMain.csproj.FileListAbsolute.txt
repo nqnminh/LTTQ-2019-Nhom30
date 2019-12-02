@@ -1,6 +1,5 @@
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\bin\Debug\frmMain.exe
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\bin\Debug\frmMain.pdb
-C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.csprojResolveAssemblyReference.cache
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.Properties.Resources.resources
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.csproj.GenerateResource.Cache
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.exe.licenses
@@ -29,3 +28,7 @@ C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmHopdo
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmKhu.resources
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmPPhong.resources
 C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.frmTaisan.resources
+C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.Class.Minh.frmSinhvien.resources
+C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.Class.Minh.frmNhanvien.resources
+C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.csprojResolveAssemblyReference.cache
+C:\Users\PV\Desktop\C#\LTTQ-2019-Nhom30\QLKTX\frmMain\obj\Debug\frmMain.Class.Minh.frmDoimatkhau.resources

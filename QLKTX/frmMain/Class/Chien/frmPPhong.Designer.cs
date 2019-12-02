@@ -31,8 +31,13 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dgvPhong = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtTim = new System.Windows.Forms.TextBox();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,11 +55,6 @@
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtSLMax = new System.Windows.Forms.TextBox();
             this.txtMa = new System.Windows.Forms.TextBox();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,6 +91,38 @@
             this.groupBox2.Text = "Chức năng";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Location = new System.Drawing.Point(11, 161);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton5.TabIndex = 8;
+            this.simpleButton5.Text = "Thoát";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(11, 115);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton3.TabIndex = 5;
+            this.simpleButton3.Text = "Xóa";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(11, 77);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.TabIndex = 6;
+            this.simpleButton2.Text = "Sửa";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(11, 34);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 7;
+            this.simpleButton1.Text = "Thêm";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtTim);
@@ -108,6 +140,14 @@
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(147, 20);
             this.txtTim.TabIndex = 0;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(49, 115);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton4.TabIndex = 7;
+            this.simpleButton4.Text = "Tìm Kiếm";
             // 
             // groupBox4
             // 
@@ -262,57 +302,18 @@
             this.txtMa.Size = new System.Drawing.Size(100, 20);
             this.txtMa.TabIndex = 0;
             // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(11, 161);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton5.TabIndex = 8;
-            this.simpleButton5.Text = "Thoát";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(11, 115);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton3.TabIndex = 5;
-            this.simpleButton3.Text = "Xóa";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(11, 77);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton2.TabIndex = 6;
-            this.simpleButton2.Text = "Sửa";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(11, 34);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 7;
-            this.simpleButton1.Text = "Thêm";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(49, 115);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 7;
-            this.simpleButton4.Text = "Tìm Kiếm";
-            // 
             // frmPPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 449);
+            this.ClientSize = new System.Drawing.Size(850, 421);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvPhong);
             this.Controls.Add(this.labelControl1);
             this.Name = "frmPPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "z";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).EndInit();
             this.groupBox2.ResumeLayout(false);

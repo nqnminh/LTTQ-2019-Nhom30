@@ -1,25 +1,21 @@
-﻿using frmMain.Class;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
-namespace frmMain
+namespace frmMain.Class.Minh
 {
-    public partial class frmHopdong : Form
+    public partial class frmDoimatkhau : DevExpress.XtraEditors.XtraForm
     {
-        public frmHopdong()
+        public frmDoimatkhau()
         {
             InitializeComponent();
-            
-          
         }
-
-        
     }
 }
