@@ -80,6 +80,7 @@
             this.hyperlinkLabelControl1.Size = new System.Drawing.Size(77, 13);
             this.hyperlinkLabelControl1.TabIndex = 5;
             this.hyperlinkLabelControl1.Text = "Reset password";
+            this.hyperlinkLabelControl1.Click += new System.EventHandler(this.hyperlinkLabelControl1_Click);
             // 
             // labelControl3
             // 

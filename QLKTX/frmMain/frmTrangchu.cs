@@ -16,14 +16,19 @@ namespace frmMain
         public String user;
         private void loadForm()
         {
-            if (Connect_Taikhoan.Instance.loadForm(user))
+            if (phanQuyen(user))
             {
-                barButtonItem1.Enabled = false;
+                btnQLnv.Enabled = false;
             }
+        }
+        private bool phanQuyen(String user)
+        {
+            return Connect_Taikhoan.Instance.loadForm(user);
         }
         public frmMain()
         {
             InitializeComponent();
+            
         }
         public void skin()
         {
@@ -34,6 +39,8 @@ namespace frmMain
         private void frmMain_Load(object sender, EventArgs e)
         {
             skin();
+            loadForm();
+            
         }
         
        
@@ -125,6 +132,13 @@ namespace frmMain
             this.Close();
             frm.Show();
               
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmNhanvien fnv = new frmNhanvien();
+            fnv.MdiParent = this;
+            fnv.Show();
         }
 
        

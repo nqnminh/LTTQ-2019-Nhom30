@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Class\Connection.cs" />
     <Compile Include="Class\Connect_Taikhoan.cs" />
+    <Compile Include="Class\Minh\Connect_Nhanvien.cs" />
     <Compile Include="Class\Minh\Connect_Sinhvien.cs" />
     <Compile Include="Class\Minh\frmDoimatkhau.cs">
       <SubType>Form</SubType>
@@ -79,6 +80,7 @@
     <Compile Include="Class\Minh\frmSinhvien.Designer.cs">
       <DependentUpon>frmSinhvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\Nam\Connect_Taisan.cs" />
     <Compile Include="Class\Nam\DataProvider.cs" />
     <Compile Include="frmTrangchu.cs">
       <SubType>Form</SubType>

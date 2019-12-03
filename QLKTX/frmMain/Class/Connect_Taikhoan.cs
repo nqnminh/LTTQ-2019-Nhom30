@@ -28,11 +28,17 @@ namespace frmMain.Class
         }
         public bool loadForm(String user)
         {
-            string query="select Quyenhan from tblNhanvien where Manv='"+user+"'";
+            string query="select * from tblNhanvien where Manv='"+user+"' and Quyenhan=1";
 
             DataTable dt = Connection.Instance.ExecuteQuery(query);
-            DataRow dr = dt.Rows[0];
-            return Convert.ToInt32(dr["Quyenhan"].ToString())>0;
+            return dt.Rows.Count>0;
+            
+        }
+        public bool doimk(String manv, String pass ,String passnew)
+        {
+            string query = "update tblNhanvien set Matkhau= @MK where Manv= @MANV and Matkhau= @MATKHAU";
+            int sul=Connection.Instance.ExecuteNonQuery(query,new object[]{passnew,manv,pass});
+            return sul > 0;
         }
 
 

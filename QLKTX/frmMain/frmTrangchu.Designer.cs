@@ -37,7 +37,7 @@
             this.btnDangnhap = new DevExpress.XtraBars.BarButtonItem();
             this.btnDangxuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnDoimatkhau = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnQLnv = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -67,7 +67,7 @@
             this.btnDangnhap,
             this.btnDangxuat,
             this.btnDoimatkhau,
-            this.barButtonItem1,
+            this.btnQLnv,
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
@@ -153,15 +153,16 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.btnDoimatkhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDoimatkhau_ItemClick);
             // 
-            // barButtonItem1
+            // btnQLnv
             // 
-            this.barButtonItem1.Caption = "Quản lý nhân viên";
-            this.barButtonItem1.Id = 6;
-            this.barButtonItem1.ImageIndex = 5;
-            this.barButtonItem1.LargeWidth = 100;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            this.btnQLnv.Caption = "Quản lý nhân viên";
+            this.btnQLnv.Id = 6;
+            this.btnQLnv.ImageIndex = 5;
+            this.btnQLnv.LargeWidth = 100;
+            this.btnQLnv.Name = "btnQLnv";
+            this.btnQLnv.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnQLnv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -260,7 +261,7 @@
             // ribbonPageGroup6
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.btnDangnhapa);
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup6.ItemLinks.Add(this.btnQLnv);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem3);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem4);
@@ -328,7 +329,7 @@
         private DevExpress.Utils.ImageCollection imgCL1;
         private DevExpress.XtraBars.BarButtonItem btnDangxuat;
         private DevExpress.XtraBars.BarButtonItem btnDoimatkhau;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnQLnv;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;

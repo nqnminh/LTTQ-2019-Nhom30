@@ -22,12 +22,12 @@ namespace frmMain.Class.Minh
         int index, a,gtinh;
         String masv,giatri;
 
-        void loadSinhvien()
+        void loadSinhvien()//load sinh viên gridview
         {
             String query = "select * from tblSinhvien";
             grvSinhvien.DataSource = Connection.Instance.ExecuteQuery(query);
         }
-        private void setConntrol(bool s)
+        private void setConntrol(bool s)//sét bật tắt cho các nút button
         {
             btnNew.Enabled = s;
             btnSave.Enabled=!s;
@@ -48,6 +48,7 @@ namespace frmMain.Class.Minh
 
 
         }
+        #region New
 
         private void btnNew_Click(object sender, EventArgs e)
         {
@@ -56,13 +57,15 @@ namespace frmMain.Class.Minh
             a = 1;
             loadPhong();
         }
+        #endregion
 
+        
         private void btnCancel_Click(object sender, EventArgs e)
         {
             setConntrol(true);
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
+        
+        private void btnSave_Click(object sender, EventArgs e)//Lưu
         {
             setConntrol(true);
             string msv, ht, ns, gt, hk, ngdk, gc, mp;
@@ -99,8 +102,9 @@ namespace frmMain.Class.Minh
 
 
         }
+        
 
-        private void grvSinhvien_Click(object sender, EventArgs e)
+        private void grvSinhvien_Click(object sender, EventArgs e)//Sư kiên click vào grid view
         {
             index = grvSinhvien.CurrentRow.Index;
             txtMasv.Text = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
@@ -145,6 +149,9 @@ namespace frmMain.Class.Minh
         private void btnDelete_Click(object sender, EventArgs e)
         {
             masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
+            DialogResult dr = new System.Windows.Forms.DialogResult();
+            dr = MessageBox.Show("Bạn có muốn xóa thông tin vừa nhập", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == System.Windows.Forms.DialogResult.No) return;
             Connect_Sinhvien.Instance.deleteSv(masv) ;
             loadSinhvien();
         }
@@ -173,6 +180,8 @@ namespace frmMain.Class.Minh
             cmbPhong.DisplayMember="Maphong";
             cmbPhong.ValueMember = "Maphong";
         }
+
+        
 
        
      

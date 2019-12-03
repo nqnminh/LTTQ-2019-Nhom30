@@ -27,8 +27,9 @@ namespace frmMain
             {
                 frmMain fmain = new frmMain();
                 this.Hide();
-                fmain.Show();
                 fmain.user = userName;
+                fmain.Show();
+                
                 
             }
             else
@@ -48,10 +49,15 @@ namespace frmMain
 
         private void frmDangnhap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel,MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.OK)
             {
                 e.Cancel=true;
             }
+        }
+
+        private void hyperlinkLabelControl1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vui lòng liên hệ với Trưởng ban QLKTX để được cấp lại mật khẩu hoặc liên hệ đường dây lạnh 1900100 có!", "Thồng báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
