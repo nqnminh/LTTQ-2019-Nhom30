@@ -139,21 +139,35 @@ namespace frmMain.Class.Minh
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            setConntrol(false);
-            a = 2;
-            masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
-            loadPhong();
+            try
+            {
+                setConntrol(false);
+                a = 2;
+                masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
+                loadPhong();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn giá trị cần sửa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
-            DialogResult dr = new System.Windows.Forms.DialogResult();
-            dr = MessageBox.Show("Bạn có muốn xóa thông tin vừa nhập", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr == System.Windows.Forms.DialogResult.No) return;
-            Connect_Sinhvien.Instance.deleteSv(masv) ;
-            loadSinhvien();
+            try
+            {
+                masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
+                DialogResult dr = new System.Windows.Forms.DialogResult();
+                dr = MessageBox.Show("Bạn có muốn xóa thông tin vừa nhập", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == System.Windows.Forms.DialogResult.No) return;
+                Connect_Sinhvien.Instance.deleteSv(masv);
+                loadSinhvien();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn giá trị cần xóa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)

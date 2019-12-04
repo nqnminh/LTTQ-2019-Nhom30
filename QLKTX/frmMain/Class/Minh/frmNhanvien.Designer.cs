@@ -144,6 +144,7 @@
             this.btnReset.Size = new System.Drawing.Size(147, 23);
             this.btnReset.TabIndex = 0;
             this.btnReset.Text = "Đặt lại mật khẩu";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnDelete
             // 

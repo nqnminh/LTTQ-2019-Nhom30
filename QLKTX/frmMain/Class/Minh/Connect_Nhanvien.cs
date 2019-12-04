@@ -48,7 +48,12 @@ namespace frmMain.Class.Minh
             DataTable tb = Connection.Instance.ExecuteQuery(query);
             return tb;
         }
-
+        public bool resetpass(String manv)
+        {
+            string query = "update tblNhanvien set Matkhau='202cb962ac59075b964b07152d234b70' where Manv='" + manv + "";
+            int re = Connection.Instance.ExecuteNonQuery(query);
+            return re > 0;
+        }
 
     }
 }

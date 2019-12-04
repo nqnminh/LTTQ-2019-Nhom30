@@ -225,7 +225,7 @@
             // 
             this.txtMasv.Location = new System.Drawing.Point(74, 27);
             this.txtMasv.Name = "txtMasv";
-            this.txtMasv.Properties.Appearance.BackColor = System.Drawing.Color.LemonChiffon;
+            this.txtMasv.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.txtMasv.Properties.Appearance.Options.UseBackColor = true;
             this.txtMasv.Size = new System.Drawing.Size(174, 20);
             this.txtMasv.TabIndex = 1;
@@ -377,7 +377,6 @@
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(262, 20);
             this.txtTimkiem.TabIndex = 6;
-
             // 
             // frmSinhvien
             // 

@@ -58,15 +58,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Connection.cs" />
-    <Compile Include="Class\Connect_Taikhoan.cs" />
-    <Compile Include="Class\Minh\Connect_Nhanvien.cs" />
-    <Compile Include="Class\Minh\Connect_Sinhvien.cs" />
-    <Compile Include="Class\Minh\frmDoimatkhau.cs">
+    <Compile Include="Class\Chien\Connect_Diennuoc.cs" />
+    <Compile Include="Class\Chien\Connect_Khu.cs" />
+    <Compile Include="Class\Chien\Connect_Phong.cs" />
+    <Compile Include="Class\Chien\frmDienNuoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Class\Minh\frmDoimatkhau.Designer.cs">
-      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    <Compile Include="Class\Chien\frmDienNuoc.designer.cs">
+      <DependentUpon>frmDienNuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Chien\frmKhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Chien\frmKhu.designer.cs">
+      <DependentUpon>frmKhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Chien\frmPPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Chien\frmPPhong.designer.cs">
+      <DependentUpon>frmPPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Connection.cs" />
+    <Compile Include="Class\Connect_Taikhoan.cs" />
+    <Compile Include="Class\Minh\Connect_Hopdong.cs" />
+    <Compile Include="Class\Minh\Connect_Nhanvien.cs" />
+    <Compile Include="Class\Minh\Connect_Sinhvien.cs" />
+    <Compile Include="Class\Minh\frmHopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Minh\frmHopdong.Designer.cs">
+      <DependentUpon>frmHopdong.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Minh\frmNhanvien.cs">
       <SubType>Form</SubType>
@@ -82,6 +104,24 @@
     </Compile>
     <Compile Include="Class\Nam\Connect_Taisan.cs" />
     <Compile Include="Class\Nam\DataProvider.cs" />
+    <Compile Include="Class\Nam\frmDoimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Nam\frmDoimatkhau.Designer.cs">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Nam\frmHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Nam\frmHoadon.Designer.cs">
+      <DependentUpon>frmHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Nam\frmTaisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Nam\frmTaisan.Designer.cs">
+      <DependentUpon>frmTaisan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTrangchu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,67 +134,13 @@
     <Compile Include="frmDangnhap.Designer.cs">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\Chien\frmDienNuoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Chien\frmDienNuoc.designer.cs">
-      <DependentUpon>frmDienNuoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Class\Nam\frmHoadon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Nam\frmHoadon.Designer.cs">
-      <DependentUpon>frmHoadon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Class\Nam\frmHopdong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Nam\frmHopdong.Designer.cs">
-      <DependentUpon>frmHopdong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Class\Chien\frmKhu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Chien\frmKhu.designer.cs">
-      <DependentUpon>frmKhu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Class\Chien\frmPPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Chien\frmPPhong.designer.cs">
-      <DependentUpon>frmPPhong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Class\Nam\frmTaisan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class\Nam\frmTaisan.Designer.cs">
-      <DependentUpon>frmTaisan.cs</DependentUpon>
-    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Class\Minh\frmDoimatkhau.resx">
-      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Class\Minh\frmNhanvien.resx">
-      <DependentUpon>frmNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Class\Minh\frmSinhvien.resx">
-      <DependentUpon>frmSinhvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTrangchu.resx">
-      <DependentUpon>frmTrangchu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDangnhap.resx">
-      <DependentUpon>frmDangnhap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Class\Chien\frmDienNuoc.resx">
       <DependentUpon>frmDienNuoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Class\Nam\frmHoadon.resx">
-      <DependentUpon>frmHoadon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Class\Nam\frmHopdong.resx">
-      <DependentUpon>frmHopdong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Class\Chien\frmKhu.resx">
       <DependentUpon>frmKhu.cs</DependentUpon>
@@ -162,9 +148,42 @@
     <EmbeddedResource Include="Class\Chien\frmPPhong.resx">
       <DependentUpon>frmPPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Class\Minh\frmHopdong.resx">
+      <DependentUpon>frmHopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Minh\frmNhanvien.resx">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Minh\frmSinhvien.resx">
+      <DependentUpon>frmSinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Nam\frmDoimatkhau.resx">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Nam\frmHoadon.resx">
+      <DependentUpon>frmHoadon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class\Nam\frmTaisan.resx">
       <DependentUpon>frmTaisan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTrangchu.resx">
+      <DependentUpon>frmTrangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangnhap.resx">
+      <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\frmMain.Class.Minh.frmDoimatkhau.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.Class.Minh.frmNhanvien.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.Class.Minh.frmSinhvien.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmDangnhap.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmDienNuoc.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmHoadon.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmHopdong.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmKhu.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmMain.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmPPhong.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.frmTaisan.resources" />
+    <EmbeddedResource Include="obj\Debug\frmMain.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +194,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\frmMain.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\frmMain.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\frmMain.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -186,7 +210,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Form\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\frmMaaain.exe" />
+    <Content Include="bin\Debug\frmMain.exe" />
+    <Content Include="bin\Debug\frmMain.pdb" />
+    <Content Include="bin\Debug\frmMain.vshost.exe" />
+    <Content Include="obj\Debug\frmMain.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\frmMain.exe" />
+    <Content Include="obj\Debug\frmmain.exe.licenses" />
+    <Content Include="obj\Debug\frmMain.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -30,16 +30,14 @@
         {
             this.dgvKhu = new System.Windows.Forms.DataGridView();
             this.grTT = new System.Windows.Forms.GroupBox();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtGC = new System.Windows.Forms.TextBox();
+            this.btnCanl = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNew = new DevExpress.XtraEditors.SimpleButton();
             this.txtMNV = new System.Windows.Forms.TextBox();
             this.txtTenK = new System.Windows.Forms.TextBox();
             this.txtMK = new System.Windows.Forms.TextBox();
-            this.labGC = new System.Windows.Forms.Label();
             this.labMNV = new System.Windows.Forms.Label();
             this.labTen = new System.Windows.Forms.Label();
             this.lMaK = new System.Windows.Forms.Label();
@@ -53,77 +51,74 @@
             this.dgvKhu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhu.Location = new System.Drawing.Point(1, 36);
             this.dgvKhu.Name = "dgvKhu";
-            this.dgvKhu.Size = new System.Drawing.Size(375, 278);
+            this.dgvKhu.Size = new System.Drawing.Size(437, 278);
             this.dgvKhu.TabIndex = 0;
+            this.dgvKhu.Click += new System.EventHandler(this.dgvKhu_Click);
             // 
             // grTT
             // 
-            this.grTT.Controls.Add(this.simpleButton5);
-            this.grTT.Controls.Add(this.simpleButton4);
-            this.grTT.Controls.Add(this.simpleButton3);
-            this.grTT.Controls.Add(this.simpleButton2);
-            this.grTT.Controls.Add(this.simpleButton1);
-            this.grTT.Controls.Add(this.txtGC);
+            this.grTT.Controls.Add(this.btnCanl);
+            this.grTT.Controls.Add(this.btnSave);
+            this.grTT.Controls.Add(this.btnDel);
+            this.grTT.Controls.Add(this.btnEdit);
+            this.grTT.Controls.Add(this.btnNew);
             this.grTT.Controls.Add(this.txtMNV);
             this.grTT.Controls.Add(this.txtTenK);
             this.grTT.Controls.Add(this.txtMK);
-            this.grTT.Controls.Add(this.labGC);
             this.grTT.Controls.Add(this.labMNV);
             this.grTT.Controls.Add(this.labTen);
             this.grTT.Controls.Add(this.lMaK);
-            this.grTT.Location = new System.Drawing.Point(382, 36);
+            this.grTT.Location = new System.Drawing.Point(444, 31);
             this.grTT.Name = "grTT";
-            this.grTT.Size = new System.Drawing.Size(289, 278);
+            this.grTT.Size = new System.Drawing.Size(289, 283);
             this.grTT.TabIndex = 1;
             this.grTT.TabStop = false;
             this.grTT.Text = "Thông tin";
             // 
-            // simpleButton5
+            // btnCanl
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(102, 249);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton5.TabIndex = 3;
-            this.simpleButton5.Text = "Thoát";
+            this.btnCanl.Location = new System.Drawing.Point(102, 249);
+            this.btnCanl.Name = "btnCanl";
+            this.btnCanl.Size = new System.Drawing.Size(75, 23);
+            this.btnCanl.TabIndex = 3;
+            this.btnCanl.Text = "Hủy";
+            this.btnCanl.Click += new System.EventHandler(this.btnCanl_Click);
             // 
-            // simpleButton4
+            // btnSave
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(165, 216);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "In Danh Sách";
+            this.btnSave.Location = new System.Drawing.Point(165, 216);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // simpleButton3
+            // btnDel
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(43, 216);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "Xóa";
+            this.btnDel.Location = new System.Drawing.Point(43, 216);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 23);
+            this.btnDel.TabIndex = 2;
+            this.btnDel.Text = "Xóa";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
-            // simpleButton2
+            // btnEdit
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(165, 172);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton2.TabIndex = 2;
-            this.simpleButton2.Text = "Sửa";
+            this.btnEdit.Location = new System.Drawing.Point(165, 172);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // simpleButton1
+            // btnNew
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(43, 172);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Thêm";
-            // 
-            // txtGC
-            // 
-            this.txtGC.Location = new System.Drawing.Point(102, 121);
-            this.txtGC.Name = "txtGC";
-            this.txtGC.Size = new System.Drawing.Size(154, 20);
-            this.txtGC.TabIndex = 1;
+            this.btnNew.Location = new System.Drawing.Point(43, 172);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 23);
+            this.btnNew.TabIndex = 2;
+            this.btnNew.Text = "Thêm";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // txtMNV
             // 
@@ -145,15 +140,6 @@
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(154, 20);
             this.txtMK.TabIndex = 1;
-            // 
-            // labGC
-            // 
-            this.labGC.AutoSize = true;
-            this.labGC.Location = new System.Drawing.Point(22, 121);
-            this.labGC.Name = "labGC";
-            this.labGC.Size = new System.Drawing.Size(45, 13);
-            this.labGC.TabIndex = 0;
-            this.labGC.Text = "Ghi Chú";
             // 
             // labMNV
             // 
@@ -197,13 +183,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 322);
+            this.ClientSize = new System.Drawing.Size(743, 322);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grTT);
             this.Controls.Add(this.dgvKhu);
             this.Name = "frmKhu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKhu";
+            this.Load += new System.EventHandler(this.frmKhu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhu)).EndInit();
             this.grTT.ResumeLayout(false);
             this.grTT.PerformLayout();
@@ -216,19 +203,17 @@
 
         private System.Windows.Forms.DataGridView dgvKhu;
         private System.Windows.Forms.GroupBox grTT;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private System.Windows.Forms.TextBox txtGC;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.SimpleButton btnDel;
+        private DevExpress.XtraEditors.SimpleButton btnEdit;
+        private DevExpress.XtraEditors.SimpleButton btnNew;
         private System.Windows.Forms.TextBox txtMNV;
         private System.Windows.Forms.TextBox txtTenK;
         private System.Windows.Forms.TextBox txtMK;
-        private System.Windows.Forms.Label labGC;
         private System.Windows.Forms.Label labMNV;
         private System.Windows.Forms.Label labTen;
         private System.Windows.Forms.Label lMaK;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton btnCanl;
     }
 }

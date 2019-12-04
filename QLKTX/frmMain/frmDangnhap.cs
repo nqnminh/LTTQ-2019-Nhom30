@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using frmMain.Class;
+using System.Security.Cryptography;
 
 namespace frmMain
 {
@@ -18,12 +19,36 @@ namespace frmMain
         {
             InitializeComponent();
         }
-        
+        MD5 md = MD5.Create();
+        private string EncodeMD5(string pass)
+        {
+
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+
+            byte[] bs = System.Text.Encoding.UTF8.GetBytes(pass);
+
+            bs = md5.ComputeHash(bs);
+
+            System.Text.StringBuilder s = new System.Text.StringBuilder();
+
+            foreach (byte b in bs)
+            {
+
+                s.Append(b.ToString("x1").ToLower());
+
+            }
+
+            pass = s.ToString();
+
+            return pass;
+
+        }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             String userName = txtUsername.Text;
             String passWord = txtPassưord.Text;
-            if (Login(userName,passWord))
+            String passMD5 = EncodeMD5(passWord);
+            if (Login(userName,passMD5))
             {
                 frmMain fmain = new frmMain();
                 this.Hide();
@@ -37,9 +62,9 @@ namespace frmMain
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu");
             }
         }
-        bool Login(String userName, String passWord)
+        private bool Login(String userName, String passMD5)
         {
-            return Connect_Taikhoan.Instance.Login(userName,passWord);
+            return Connect_Taikhoan.Instance.Login(userName,passMD5);
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
