@@ -53,5 +53,20 @@ namespace frmMain.Class.Minh
             return dt;
             
         }
+        public bool themSl(String maPhong,int a)
+        {
+
+            string query = "";
+            switch (a)
+            {
+                case (1): query= "update tblPhong set Sldango=Sldango+1 where Maphong= @MAPHONG";
+                    break;
+                case (3): query = "update tblPhong set Sldango=Sldango-1 where Maphong= @MAPHONG";
+                    break;
+            }
+
+            int result = Connection.Instance.ExecuteNonQuery(query, new object[] { maPhong });
+            return result > 0;
+        }
     }
 }

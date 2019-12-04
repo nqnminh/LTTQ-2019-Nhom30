@@ -91,7 +91,9 @@ namespace frmMain.Class.Minh
             {
                 if (Connect_Sinhvien.Instance.saveSv(msv, ht, ns, gt, hk, sdt, ngdk, gc, mp, a, masv))
                 {
+                   
                     MessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Connect_Sinhvien.Instance.themSl(mp, a);
                 }
                 loadSinhvien();
             }
@@ -157,11 +159,14 @@ namespace frmMain.Class.Minh
         {
             try
             {
+                a = 3;
                 masv = grvSinhvien.Rows[index].Cells[0].Value.ToString().Trim();
+                String mp = grvSinhvien.Rows[index].Cells[8].Value.ToString().Trim();
                 DialogResult dr = new System.Windows.Forms.DialogResult();
                 dr = MessageBox.Show("Bạn có muốn xóa thông tin vừa nhập", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == System.Windows.Forms.DialogResult.No) return;
                 Connect_Sinhvien.Instance.deleteSv(masv);
+                Connect_Sinhvien.Instance.themSl(mp,a);
                 loadSinhvien();
             }
             catch
