@@ -102,6 +102,7 @@
     <Compile Include="Class\Minh\frmSinhvien.Designer.cs">
       <DependentUpon>frmSinhvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\Nam\Connect_Hoadon.cs" />
     <Compile Include="Class\Nam\Connect_Taisan.cs" />
     <Compile Include="Class\Nam\DataProvider.cs" />
     <Compile Include="Class\Nam\frmDoimatkhau.cs">

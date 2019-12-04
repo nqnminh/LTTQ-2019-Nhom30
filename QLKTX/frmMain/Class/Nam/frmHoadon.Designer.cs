@@ -39,27 +39,28 @@
             this.grhoadon = new DevExpress.XtraEditors.GroupControl();
             this.txtmaphong = new DevExpress.XtraEditors.TextEdit();
             this.txtsodienthangtruoc = new DevExpress.XtraEditors.TextEdit();
+            this.txtTongtien = new DevExpress.XtraEditors.TextEdit();
             this.txtsodienthangsau = new DevExpress.XtraEditors.TextEdit();
             this.txtsonuocthangsau = new DevExpress.XtraEditors.TextEdit();
             this.txtsonuocthangtruoc = new DevExpress.XtraEditors.TextEdit();
             this.txtmahoadon = new DevExpress.XtraEditors.TextEdit();
+            this.label1 = new System.Windows.Forms.Label();
             this.grhoadon1 = new DevExpress.XtraEditors.GroupControl();
             this.cboTimkiem = new System.Windows.Forms.ComboBox();
             this.btin = new DevExpress.XtraEditors.SimpleButton();
             this.btnTimkiem = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.txtTimkiem = new DevExpress.XtraEditors.TextEdit();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnNew = new DevExpress.XtraEditors.SimpleButton();
-            this.txtTimkiem = new DevExpress.XtraEditors.TextEdit();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTongtien = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoadon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grhoadon)).BeginInit();
             this.grhoadon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtmaphong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsodienthangtruoc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTongtien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsodienthangsau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsonuocthangsau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsonuocthangtruoc.Properties)).BeginInit();
@@ -67,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grhoadon1)).BeginInit();
             this.grhoadon1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimkiem.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTongtien.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvHoadon
@@ -79,6 +79,7 @@
             this.dgvHoadon.RowTemplate.Height = 24;
             this.dgvHoadon.Size = new System.Drawing.Size(830, 206);
             this.dgvHoadon.TabIndex = 0;
+            this.dgvHoadon.Click += new System.EventHandler(this.dgvHoadon_Click);
             // 
             // lbmahd
             // 
@@ -184,6 +185,14 @@
             this.txtsodienthangtruoc.Size = new System.Drawing.Size(67, 20);
             this.txtsodienthangtruoc.TabIndex = 26;
             // 
+            // txtTongtien
+            // 
+            this.txtTongtien.Location = new System.Drawing.Point(184, 143);
+            this.txtTongtien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTongtien.Name = "txtTongtien";
+            this.txtTongtien.Size = new System.Drawing.Size(163, 20);
+            this.txtTongtien.TabIndex = 25;
+            // 
             // txtsodienthangsau
             // 
             this.txtsodienthangsau.Location = new System.Drawing.Point(184, 119);
@@ -215,6 +224,15 @@
             this.txtmahoadon.Name = "txtmahoadon";
             this.txtmahoadon.Size = new System.Drawing.Size(260, 20);
             this.txtmahoadon.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 146);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tổng tiền";
             // 
             // grhoadon1
             // 
@@ -270,42 +288,7 @@
             this.btnSave.Size = new System.Drawing.Size(93, 19);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Lưu";
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(12, 86);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(93, 19);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Huỷ";
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(107, 28);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(89, 19);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Sửa";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(110, 56);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(89, 19);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Xoá";
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(12, 28);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(93, 19);
-            this.btnNew.TabIndex = 0;
-            this.btnNew.Text = "Thêm mới";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtTimkiem
             // 
@@ -315,22 +298,45 @@
             this.txtTimkiem.Size = new System.Drawing.Size(181, 20);
             this.txtTimkiem.TabIndex = 21;
             // 
-            // label1
+            // btnCancel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Tổng tiền";
+            this.btnCancel.Location = new System.Drawing.Point(12, 86);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(93, 19);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "Huỷ";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // txtTongtien
+            // btnEdit
             // 
-            this.txtTongtien.Location = new System.Drawing.Point(184, 143);
-            this.txtTongtien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTongtien.Name = "txtTongtien";
-            this.txtTongtien.Size = new System.Drawing.Size(163, 20);
-            this.txtTongtien.TabIndex = 25;
+            this.btnEdit.Location = new System.Drawing.Point(107, 28);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(89, 19);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(110, 56);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(89, 19);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(12, 28);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(93, 19);
+            this.btnNew.TabIndex = 0;
+            this.btnNew.Text = "Thêm mới";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // frmHoadon
             // 
@@ -351,6 +357,7 @@
             this.grhoadon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtmaphong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsodienthangtruoc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTongtien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsodienthangsau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsonuocthangsau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsonuocthangtruoc.Properties)).EndInit();
@@ -358,7 +365,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grhoadon1)).EndInit();
             this.grhoadon1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtTimkiem.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTongtien.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
