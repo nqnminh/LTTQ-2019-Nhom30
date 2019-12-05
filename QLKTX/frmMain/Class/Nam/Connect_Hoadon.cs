@@ -13,7 +13,7 @@ namespace frmMain.Class.Nam
 
         public static Connect_Hoadon Instance
         {
-            get {if(instance==null) instance=new Connect_Hoadon; return Connect_Hoadon.instance; }
+            get {if(instance==null) instance=new Connect_Hoadon(); return Connect_Hoadon.instance; }
             private set { Connect_Hoadon.instance = value; }
         }
         private Connect_Hoadon() {  }

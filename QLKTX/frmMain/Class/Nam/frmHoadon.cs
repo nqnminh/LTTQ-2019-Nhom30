@@ -132,14 +132,14 @@ namespace frmMain
             {
                 MessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-            formLoad();
+                loadHoadon();
             }
                 catch(Exception a){
                     MessageBox.Show(a.Message+"\nXem lại giá trị nhập vào bị trùng không?", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-        }
+        
         }
     }
 }
